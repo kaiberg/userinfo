@@ -13,7 +13,7 @@ go build
 ## Usage
 
 ```go
-./userinfo
+./userinfo --site github.com --user kaiberg
 ```
 
 ## Contributing
