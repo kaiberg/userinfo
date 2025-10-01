@@ -17,5 +17,7 @@ func main() {
 	}
 
 	fmt.Printf("Fetching %s from website %s\n", *usernamePtr, *websitePtr)
+	if(*websitePtr == "github.com") {
+		GetGithubUserInfo(*usernamePtr)
+	}
 }
-
