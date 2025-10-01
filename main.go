@@ -16,6 +16,11 @@ func main() {
 		panic(message)
 	}
 
+	if IsUserBlacklisted(*usernamePtr) == true {
+		message := "that user is currently not allowed to be fetched"
+		panic(message)
+	}
+
 	fmt.Printf("Fetching %s from website %s\n", *usernamePtr, *websitePtr)
 	if(*websitePtr == "github.com") {
 		GetGithubUserInfo(*usernamePtr)
